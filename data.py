@@ -1,0 +1,53 @@
+from classes import *
+
+# a list of the main piece of transaction data
+main_data = [Transaction(Date(8,8,2024),15.54,"Grocery","Smile Market"),
+             Transaction(Date(8,11,2024),7.52,"Food","Koala Tea"),
+             Transaction(Date(8,16,2024),4.99,"Entertainment","Roblox"),
+             Transaction(Date(8,15,2024),7.98,"Grocery","Smile Market"),
+             Transaction(Date(8,18,2024),9.55,"Food","8 Teas"),
+             Transaction(Date(8,23,2024),22.95,"Food","Tea Percent"),
+             Transaction(Date(8,24,2024),39.65,"Food","Kobing"),
+             Transaction(Date(8,23,2024),9.99,"Entertainment","Roblox"),
+             Transaction(Date(9,3,2024),46.13,"Entertainment","Six Flags"),
+             Transaction(Date(9,7,2024),44.70,"Food","Panda Express"),
+             Transaction(Date(9,7,2024),35.56,"Food","Chipotle"),
+             Transaction(Date(9,8,2024),12.50,"Food","Popeyes"),
+             Transaction(Date(9,7,2024),2.87,"Food","Starbucks"),
+             Transaction(Date(9,9,2024),43.10,"Food","Ember"),
+             Transaction(Date(9,13,2024),45.68,"Food","Panda Express"),
+             Transaction(Date(9,14,2024),8.73,"Entertainment","Six Flags"),
+             Transaction(Date(9,14,2024),10.00,"Entertainment","Six Flags"),
+             Transaction(Date(9,23,2024),46.00,"Entertainment","Mustang Lanes"),
+             Transaction(Date(9,24,2024),1.35,"Food","Vending Machine"),
+             Transaction(Date(9,24,2024),9.59,"Supplies","CP Bookstore"),
+             Transaction(Date(9,29,2024),33.00,"Entertainment","Mustang Lanes"),
+             Transaction(Date(9,29,2024),11.26,"Food","In N Out"),
+             Transaction(Date(10,2,2024),15.00,"Supplies","CP Bookstore"),
+             Transaction(Date(10,3,2024),6.26,"Food","201 Kitchen"),
+             Transaction(Date(10,4,2024),25.00,"Sports","Intramurals"),
+             Transaction(Date(10,5,2024),11.91,"Food","In N Out"),
+             Transaction(Date(10,12,2024),26.95,"Food","Sylvesters"),
+             Transaction(Date(10,14,2024),152.21,"Travel","Expedia"),
+             Transaction(Date(10,19,2024),13.96,"Supplies","Walmart"),
+             Transaction(Date(10,19,2024),26.50,"Entertainment","Mustang Lanes"),
+             Transaction(Date(10,20,2024),19.03,"Food","Raku Ramen"),
+             Transaction(Date(10,26,2024),26.50,"Entertainment","Mustang Lanes"),
+             Transaction(Date(11,1,2024),5.35,"Supplies","CP ookstore"),
+             Transaction(Date(11,2,2024),5.87,"Food","In N Out"),
+             Transaction(Date(11,3,2024),10.90,"Donation","IFES"),
+             Transaction(Date(11,2,2024),11.20,"Food","Taco Bell"),
+             Transaction(Date(11,3,2024),14.13,"Food","Raising Canes"),
+             Transaction(Date(11,10,2024),17.07,"Food","Taqueria Santa Cruz"),
+             Transaction(Date(11,12,2024),9.99,"Misc","Processing"),
+             Transaction(Date(11,13,2024),74.00,"Travel","Mustang Express"),
+             Transaction(Date(11,15,2024),13.04,"Food","McDonalds"),
+             Transaction(Date(11,22,2024),21.00,"Food","CP Creamery"),
+             Transaction(Date(11,26,2024),50.00,"Food","Gangnam Avenue"),
+             Transaction(Date(11,25,2024),17.61,"Grocery","Smile Market"),
+             Transaction(Date(12,3,2024),25.00,"Sports","Intramurals")]
+
+# dictionary to accumulate total spending
+# after making dict {Food:0, Grocery:0 ...}, make a for-loop going through every transaction and categorize them into the categories in the dict to find the total cost
+
+# can make another dictionary with monthly budget to compare expenses with budget
