@@ -30,6 +30,7 @@ class Transaction:
                 self.category == other.category and
                 self.name == other.name)
 
+
 # Representation of Date
 class Date:
 

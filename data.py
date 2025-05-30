@@ -45,9 +45,24 @@ main_data = [Transaction(Date(8,8,2024),15.54,"Grocery","Smile Market"),
              Transaction(Date(11,22,2024),21.00,"Food","CP Creamery"),
              Transaction(Date(11,26,2024),50.00,"Food","Gangnam Avenue"),
              Transaction(Date(11,25,2024),17.61,"Grocery","Smile Market"),
-             Transaction(Date(12,3,2024),25.00,"Sports","Intramurals")]
+             Transaction(Date(12,3,2024),25.00,"Sports","Intramurals"),
+             Transaction(Date(12,3,2024),13.78,"Confidential","Confidential")]
+
+totals = {"Bills":0,
+          "Donation":0,
+          "Entertainment":0,
+          "Food":0,
+          "Grocery":0,
+          "Supplies":0,
+          "Shopping":0,
+          "Sports":0,
+          "Travel":0,
+          "Misc":0,
+          "Not Listed":0}
 
 # dictionary to accumulate total spending
 # after making dict {Food:0, Grocery:0 ...}, make a for-loop going through every transaction and categorize them into the categories in the dict to find the total cost
 
 # can make another dictionary with monthly budget to compare expenses with budget
+
+# operations file has orders to compare specific categories with monthly budget (went over, under budget, at the budget), view values for specific categories, view counts for specific categories
