@@ -87,7 +87,4 @@ monthly = {"Bills":50,
           "Misc":20,
           "Not Listed":0}
 
-# operations file has orders to compare specific categories with monthly budget (went over, under budget, at the budget)
-# include error for malfunctioned operation lines, skip blank lines
-
 # add a function to reset all the data back to 0

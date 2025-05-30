@@ -27,6 +27,7 @@ def sums(data:list[Transaction], expense:dict, counts:dict):
     for Cat in expense:
         expense[Cat] = round(expense[Cat], 2)
 
+
 # This function goes through every operation listed in the operations.txt file
 def operations():
 
@@ -51,17 +52,25 @@ def operations():
                 if str(Transaction.date.month) in broken[1] and broken[2] == Transaction.category:
                     month_total = round(month_total + Transaction.dollar, 2)
                     month_count = month_count + 1
-            print("{} {} information: expense = {}, count = {}".format(broken[1],broken[2],month_total,month_count))
+            print("{} {} information: expense = ${}, count = {}".format(broken[1],broken[2],month_total,month_count))
 
         # Comparing to monthly budget
-        if command == "compare":
+        elif command == "compare":
             month_total = 0
             for Transaction in data.main_data:
                 if str(Transaction.date.month) in broken[1] and broken[2] == Transaction.category:
                     month_total = round(month_total + Transaction.dollar, 2)
             if month_total > data.monthly[broken[2]]:
-                print("Over budget by {}".format(round(month_total - data.monthly[broken[2]], 2)))
+                print("Over budget by ${}".format(round(month_total - data.monthly[broken[2]], 2)))
             elif month_total == data.monthly[broken[2]]:
-                print("Equal to budget")
+                print("Equal to budget (${})".format(data.monthly[broken[2]]))
             else:
-                print("Under budget by {}".format(round(data.monthly[broken[2]] - month_total, 2)))
+                print("Under budget by ${}".format(round(data.monthly[broken[2]] - month_total, 2)))
+
+        # Skipping blank lines
+        elif command == "":
+            continue
+
+        # Error message
+        else:
+            print("ERROR - Malfunctioned operation on line {}".format(op_count))
