@@ -86,5 +86,3 @@ monthly = {"Bills":50,
           "Travel":100,
           "Misc":20,
           "Not Listed":0}
-
-# add a function to reset all the data back to 0

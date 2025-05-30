@@ -74,3 +74,18 @@ def operations():
         # Error message
         else:
             print("ERROR - Malfunctioned operation on line {}".format(op_count))
+
+
+# This function resets the expense and count total dictionaries back to 0
+def reset():
+
+    # Resetting expense totals
+    for cat in data.totals:
+        cat = 0
+
+    # Resetting count totals
+    for cat in data.counts:
+        cat = 0
+
+    print(data.totals)
+    print(data.counts)
