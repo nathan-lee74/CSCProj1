@@ -8,4 +8,6 @@ print(data.counts)
 test2 = main.operations()
 
 test3 = main.reset()
+print(data.totals)
+print(data.counts)
 print(data.monthly)

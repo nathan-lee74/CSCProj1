@@ -79,13 +79,7 @@ def operations():
 # This function resets the expense and count total dictionaries back to 0
 def reset():
 
-    # Resetting expense totals
+    # Resetting expense and count totals
     for cat in data.totals:
-        cat = 0
-
-    # Resetting count totals
-    for cat in data.counts:
-        cat = 0
-
-    print(data.totals)
-    print(data.counts)
+        data.totals[cat] = 0
+        data.counts[cat] = 0
