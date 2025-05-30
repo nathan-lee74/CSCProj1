@@ -74,6 +74,20 @@ counts = {"Bills":0,
           "Misc":0,
           "Not Listed":0}
 
-# can make another dictionary with monthly budget to compare expenses with budget
+# a dictionary for monthly budget
+monthly = {"Bills":50,
+          "Donation":20,
+          "Entertainment":20,
+          "Food":100,
+          "Grocery":20,
+          "Supplies":20,
+          "Shopping":20,
+          "Sports":30,
+          "Travel":100,
+          "Misc":20,
+          "Not Listed":0}
 
 # operations file has orders to compare specific categories with monthly budget (went over, under budget, at the budget)
+# include error for malfunctioned operation lines, skip blank lines
+
+# add a function to reset all the data back to 0
