@@ -74,7 +74,7 @@ counts = {"Bills":0.00,
           "Misc":0.00,
           "Not Listed":0.00}
 
-# a dictionary for monthly budget
+# a dictionary for monthly budget.
 monthly = {"Bills":50.00,
           "Donation":20.00,
           "Entertainment":20.00,

@@ -68,7 +68,7 @@ def operations():
             else:
                 print("Under monthly budget of ${} by ${}".format(data.monthly[broken[2]], round(data.monthly[broken[2]] - month_total, 2)))
 
-
+        # Resets the transaction log and budgets
         elif command == "reset":
             reset()
             for i in range(len(data.main_data)):

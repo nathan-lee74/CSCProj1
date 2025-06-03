@@ -15,6 +15,8 @@ class Transaction:
     # Provide a developer-friendly string representation of object
     # input: Transaction for which the string is desired
     # output: string representation
+
+    # string representation for transaction.
     def __str__(self):
         return "Name: {}, Value: {}, Date: {}, Category: {}".format(self.name, self.dollar, self.date, self.category)
 

@@ -2,7 +2,9 @@ month:August(8):Food
 flkajfkla
 month:December(12):Grocery
 
+add_transaction:December(12).9.2025:99.09:"Entertainment":"Roblox"
 
 compare:August(8):Food
 compare:October(10):Travel
 fkajsdhjk
+reset
