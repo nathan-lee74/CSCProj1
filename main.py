@@ -1,5 +1,6 @@
 import sys
 import data
+import classes
 from classes import *
 
 # This main function sums the total expense and count for each category given
@@ -66,6 +67,24 @@ def operations():
                 print("Equal to budget (${})".format(data.monthly[broken[2]]))
             else:
                 print("Under monthly budget of ${} by ${}".format(data.monthly[broken[2]], round(data.monthly[broken[2]] - month_total, 2)))
+
+
+        elif command == "reset":
+            reset()
+            for i in range(len(data.main_data)):
+                del data.main_data[0]
+
+        elif command == "add_transaction":
+            date_list = broken[1].split(".")
+            month = ''.join([char for char in date_list[0] if char.isdigit()])
+            day = date_list[1]
+            year = date_list[2]
+            value = broken[2]
+            category = broken[3]
+            name = broken[4]
+            new_transaction = classes.Transaction(Date(month, day, year), value, category, name)
+            data.main_data.append(new_transaction)
+            print("The Transaction " + "{}".format(str(new_transaction)) + " has been recorded.")
 
         # Skipping blank lines
         elif command == "":
