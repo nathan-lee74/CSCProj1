@@ -61,11 +61,11 @@ def operations():
                 if str(Transaction.date.month) in broken[1] and broken[2] == Transaction.category:
                     month_total = round(month_total + Transaction.dollar, 2)
             if month_total > data.monthly[broken[2]]:
-                print("Over budget by ${}".format(round(month_total - data.monthly[broken[2]], 2)))
+                print("Over monthly budget of ${} by ${}".format(data.monthly[broken[2]], round(month_total - data.monthly[broken[2]], 2)))
             elif month_total == data.monthly[broken[2]]:
                 print("Equal to budget (${})".format(data.monthly[broken[2]]))
             else:
-                print("Under budget by ${}".format(round(data.monthly[broken[2]] - month_total, 2)))
+                print("Under monthly budget of ${} by ${}".format(data.monthly[broken[2]], round(data.monthly[broken[2]] - month_total, 2)))
 
         # Skipping blank lines
         elif command == "":
