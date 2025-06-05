@@ -7,4 +7,6 @@ add_transaction:December(12).9.2025:99.09:"Entertainment":"Roblox"
 compare:August(8):Food
 compare:October(10):Travel
 fkajsdhjk
+
+set_budget:Food:300
 reset

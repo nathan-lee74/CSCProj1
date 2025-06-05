@@ -73,7 +73,9 @@ def operations():
             reset()
             for i in range(len(data.main_data)):
                 del data.main_data[0]
+            print("Main data has been reset")
 
+        # Adds a transaction to the list
         elif command == "add_transaction":
             date_list = broken[1].split(".")
             month = ''.join([char for char in date_list[0] if char.isdigit()])
@@ -85,6 +87,11 @@ def operations():
             new_transaction = classes.Transaction(Date(month, day, year), value, category, name)
             data.main_data.append(new_transaction)
             print("The Transaction " + "{}".format(str(new_transaction)) + " has been recorded.")
+
+        # Sets the budget to a specific value
+        elif command == "set_budget":
+            data.monthly[broken[1]] = broken[2]
+            print("Set {} budget to {}.".format(broken[1], broken[2]))
 
         # Skipping blank lines
         elif command == "":
