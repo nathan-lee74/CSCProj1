@@ -1,6 +1,5 @@
-import data
 import main
+import sys
 
-code1 = main.sums(data.main_data,data.totals,data.counts)
-
-code2 = main.operations()
+if __name__ == '__main__':
+    main.operations(sys.argv[1])
