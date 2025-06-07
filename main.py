@@ -7,6 +7,7 @@ from classes import *
 # input: list of transactions acting as the data set
 # input: a dictionary to represent the total expense for each category
 # output: a dictionary with total expenses for each category
+# Author Nathan
 def sums(data:list[Transaction], expense:dict):
 
     # Total expenses per category (rounded to 2 decimal places) and total counts per category
@@ -24,6 +25,7 @@ def sums(data:list[Transaction], expense:dict):
 # input: list of transactions acting as the data set
 # input: a dictionary to represent the total count for each category
 # output: a dictionary with total counts for each category
+# Author Nathan
 def counts(data:list[Transaction], counts:dict) -> dict:
 
     # Total count per category
@@ -36,6 +38,7 @@ def counts(data:list[Transaction], counts:dict) -> dict:
 
 
 # This function goes through every operation listed in the operations.txt file
+# Author Ethan
 def operations(filename:str):
 
     # Count data entries
@@ -115,6 +118,7 @@ def operations(filename:str):
 
 
 # This function resets the expense and count total dictionaries back to 0
+# Author Ethan
 def reset():
 
     # Resetting expense and count totals
