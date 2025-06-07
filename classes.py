@@ -1,4 +1,5 @@
 # Representation of a transaction
+# Author Nathan
 class Transaction:
 
     # Initialize a new Transaction object
@@ -37,6 +38,7 @@ class Transaction:
 
 
 # Representation of Date
+# Author Ethan
 class Date:
 
     # Initialize a new Date object
